@@ -28,6 +28,10 @@
     color: white;
     
 }
+.navegacion ul li a:hover{
+    color: #00DD25;
+}
+
 
 .navegacion a img{
     height: 30px;
