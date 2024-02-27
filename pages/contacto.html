@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <nav class="navegacion">
+        <!-- logo -->
+        <a href="../index.html">
+            <img src="../recursos/1x/Logo_menu.png" alt="retofit.com">
+        </a>
+
+        <!-- Lista de navegación -->
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+            <li><a href="../pages/actividades.html">ACTIVIDADES</a></li>
+            <li><a href="../pages/calendario.html">CALENDARIO</a></li>
+            <li><a href="../pages/contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <main class="main- contacto">
+        <h1 class="titulo-contacto">CONTACTANOS</h1>
+
+        <section class="contacto-pagina">
+        <div class="informaion">
+            <h2>Información</h2>
+            <ul>
+                <li>Teléfono 011 4087-1139</li>
+                <li>Horarios: Lunes a viernes de 9 a 13hs/16 a 22hs -
+                    sábados de 10 a 14hs
+                </li>
+                <li>Dirección: Av. Gaona 4263, B1702 Ciudadela, Provincia de Buenos Aires</li>
+            </ul>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.244627681659!2d-58.5480883!3d-34.6342122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc805e5d9ba13%3A0xc6563e2dcf869b0e!2sSigma%20Fitness%20Gym!5e0!3m2!1ses-419!2sar!4v1706567586115!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="formulario-contacto">
+            <h6>Cambiá tu cuerpo</h6>
+            <h2>Vení a RETOFIT</h2>
+            <form class="formulario" action="procesar_formulario.php" method="post">
+                <!-- Campo de Nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <!-- Campo de Apellido -->
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <!-- Campo de Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Campo de Asunto -->
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <!-- Campo de Mensaje -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <!-- Botón de Envío -->
+                <input class="boton" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+        <div class="minibanner-contacto">
+            <h3>Comenzá a cambiar tu vida</h3>
+        </div>
+    </main>
+
+
+    <footer>
+      
+        <div class="footer-izq">
+            <img class="footer-logo" src="../recursos/1x/Logo_menu.png" alt="Logo RETOFIT">
+            <img class="footer-ig" src="../recursos/1x/logo_icono_ig.png" alt="icono de instagram">
+        </div>
+        <div class="footer-der">
+            <h3>LINKS</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/actividades.html">Actividades</a></li>
+                <li><a href="./pages/calendario.html">Calendario</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>NFORMACIÓN</h3>
+            <ul>
+                <li>Av. Gaona 4263, B1702 Ciudadela, Provincia de Buenos Aires</li>
+                <li>Lunes a viernes de 9 a 13hs/16 a 22hs -
+                    sábados de 10 a 14hs</li>
+                <li>011 4087-1139</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
