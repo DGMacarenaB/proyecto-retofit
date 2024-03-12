@@ -1,0 +1,28 @@
+/* --------- main - Actividades -------- */
+
+.main-actividades{
+    .presentacion-2{
+        display: flex;
+        .presentacion-2-texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .actividades-secciones{
+        background-color: #2b2a42;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        padding: 20px 20px;
+        .secciones-individuales{
+            display: inline-block;
+        }
+        h5{
+            color: #00DD25;
+        }
+        p{
+            color: white;
+        }
+    }
+
+}

@@ -1,0 +1,86 @@
+/* --------- main - index -------- */
+
+.banner1-home {
+    width: 100vw;
+    display: flex;
+    .banner1-home-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .banner1-home-imagen{
+        width: 30%;
+        height: auto;
+    }
+}
+
+.seccion-home-destacados{
+    background-color: #2b2a42;
+    color: aliceblue;
+    display: flex;
+    font-size: 150%;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    h3{
+        text-align: center;
+    }
+}
+
+.home-carrusel img{
+    width: 100vw;
+
+}
+
+.planes-sección{
+    .planes-titulo{
+        text-align: center;
+    }
+    .planes{
+        background-color: #2b2a42;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 0;
+        .planes-seccion{
+            .planes-subidadetexto{
+                color: chartreuse;
+            }
+        }
+    }
+}
+
+.prueba-gratis{
+    display: flex;
+    .prueba-gratis-img{
+        width: 50%;
+    }
+    .prueba-gratis-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+}
+
+.servicios{
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    .servicios-home{
+        .servicios-cuerpo{
+            display: inline-block;
+            height: 100px;
+        }
+    }
+    .servicios-cuerpo{
+        height: 150px;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+    }
+}
+

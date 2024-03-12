@@ -1,0 +1,49 @@
+/* --------- footer--------- */
+
+footer{
+    background-color: #2b2a42;
+    color: white;
+    padding: 10px;
+    display: flex;
+    h3{
+        color: #00DD25;
+        font-weight: 700;
+       
+    }
+    
+    .footer-izq{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 0;
+        .footer-logo{
+            width: 50%;
+        }
+        .footer-ig{
+            width: 10%;
+            padding-top: 40px;
+            padding-left: 20px;
+        }
+    }
+    .footer-der{
+        ul{
+            li{
+                list-style: none;
+                color: white;
+                text-decoration: none;
+                font-style: normal;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        color: #00DD25;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+

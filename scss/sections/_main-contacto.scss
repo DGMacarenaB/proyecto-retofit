@@ -1,0 +1,48 @@
+/* --------- main - Contacto -------- */
+
+.main-contacto{
+        .titulo-contacto{
+            background-color: #00DD25;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            }
+        .contacto-pagina{
+                display: flex;
+                padding: 40px 0;
+                justify-content: space-evenly;
+                .formulario{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 0;
+                  
+                }
+                .informacion{
+                    .map{
+                        width: 50vw;
+                    }
+                }
+                .formulario-contacto{
+                    h6{
+                        color: #00DD25;
+                    }
+                }
+        }
+        .minibanner-contacto{
+            background-color: #00DD25;
+            color: white;
+            h3{
+                text-align: center;
+    font-weight: 700;
+    padding: 40px 0;
+            }
+        }
+}
+
+ /*Medidas querys - mobile last*/
+
+ @media (max-width:880px){
+    .contacto-pagina{ 
+        flex-direction: column;
+    }
+}

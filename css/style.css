@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* tipografías externas */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+/* -------NAVEGACIÓN-------- */
+header .navegacion {
+  background-color: #2b2a42;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2 20px; }
+  header .navegacion ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    header .navegacion ul li {
+      color: white; }
+      header .navegacion ul li a {
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        font-style: normal; }
+        header .navegacion ul li a:hover {
+          color: #00DD25; }
+        header .navegacion ul li a img {
+          height: 30px; }
+
+/*Medidas querys - mobile last*/
+@media (max-width: 870px) {
+  .navegacion {
+    flex-direction: column; } }
+
+@media (max-width: 655px) {
+  .navegacion ul {
+    justify-content: center; } }
+
+/* --------- body - general -------- */
+h1 {
+  color: #2b2a42;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-size: 300%;
+  font-style: normal;
+  padding: 10px; }
+
+h2 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 200%;
+  padding: 10px; }
+
+h3 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px; }
+
+h4 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px; }
+
+h5 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px; }
+
+h6 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px; }
+
+p {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+  margin-bottom: 20px; }
+
+a {
+  display: inline-block; }
+
+.boton {
+  color: black;
+  background-color: #00DD25;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+  margin: 0,20px;
+  align-content: center; }
+
+div p {
+  margin: 0,202; }
+
+li {
+  padding: 10px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+form {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+/* --------- main - index -------- */
+.banner1-home {
+  width: 100vw;
+  display: flex; }
+  .banner1-home .banner1-home-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; }
+  .banner1-home .banner1-home-imagen {
+    width: 30%;
+    height: auto; }
+
+.seccion-home-destacados {
+  background-color: #2b2a42;
+  color: aliceblue;
+  display: flex;
+  font-size: 150%;
+  align-content: center;
+  justify-content: space-around;
+  padding: 20px 0; }
+  .seccion-home-destacados h3 {
+    text-align: center; }
+
+.home-carrusel img {
+  width: 100vw; }
+
+.planes-sección .planes-titulo {
+  text-align: center; }
+
+.planes-sección .planes {
+  background-color: #2b2a42;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0; }
+  .planes-sección .planes .planes-seccion .planes-subidadetexto {
+    color: chartreuse; }
+
+.prueba-gratis {
+  display: flex; }
+  .prueba-gratis .prueba-gratis-img {
+    width: 50%; }
+  .prueba-gratis .prueba-gratis-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; }
+
+.servicios {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-evenly;
+  align-items: center; }
+  .servicios .servicios-home .servicios-cuerpo {
+    display: inline-block;
+    height: 100px; }
+  .servicios .servicios-cuerpo {
+    height: 150px;
+    align-items: center; }
+    .servicios .servicios-cuerpo p {
+      text-align: center; }
+
+/* --------- main - nosotros -------- */
+.main-nosotros .presentacion {
+  display: flex; }
+  .main-nosotros .presentacion .presentacion-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.main-nosotros .items {
+  background-color: #2b2a42;
+  text-align: center;
+  padding: 40px 0;
+  color: white; }
+  .main-nosotros .items ul li {
+    list-style: circle; }
+
+.main-nosotros .formas-de-trabajo {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-evenly;
+  align-items: center; }
+  .main-nosotros .formas-de-trabajo .items-formas {
+    align-items: center;
+    text-align: center; }
+
+/* --------- main - Actividades -------- */
+.main-actividades .presentacion-2 {
+  display: flex; }
+  .main-actividades .presentacion-2 .presentacion-2-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.main-actividades .actividades-secciones {
+  background-color: #2b2a42;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding: 20px 20px; }
+  .main-actividades .actividades-secciones .secciones-individuales {
+    display: inline-block; }
+  .main-actividades .actividades-secciones h5 {
+    color: #00DD25; }
+  .main-actividades .actividades-secciones p {
+    color: white; }
+
+/* --------- main - Calendario -------- */
+.main-calendario .presentacion-3 {
+  display: flex; }
+  .main-calendario .presentacion-3 .presentacion-3-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.main-calendario .horarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #2b2a42; }
+  .main-calendario .horarios .calendario {
+    padding: 30px;
+    background-color: #2b2a42; }
+    .main-calendario .horarios .calendario .calendario-logo {
+      width: 80%;
+      background-color: #2b2a42; }
+  .main-calendario .horarios .calendario-imagen {
+    width: 70vw;
+    align-items: center; }
+
+/* --------- main - Contacto -------- */
+.main-contacto .titulo-contacto {
+  background-color: #00DD25;
+  color: white;
+  text-align: center;
+  padding: 50px 0; }
+
+.main-contacto .contacto-pagina {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-evenly; }
+  .main-contacto .contacto-pagina .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0; }
+  .main-contacto .contacto-pagina .informacion .map {
+    width: 50vw; }
+  .main-contacto .contacto-pagina .formulario-contacto h6 {
+    color: #00DD25; }
+
+.main-contacto .minibanner-contacto {
+  background-color: #00DD25;
+  color: white; }
+  .main-contacto .minibanner-contacto h3 {
+    text-align: center;
+    font-weight: 700;
+    padding: 40px 0; }
+
+/*Medidas querys - mobile last*/
+@media (max-width: 880px) {
+  .contacto-pagina {
+    flex-direction: column; } }
+
+/* --------- footer--------- */
+footer {
+  background-color: #2b2a42;
+  color: white;
+  padding: 10px;
+  display: flex; }
+  footer h3 {
+    color: #00DD25;
+    font-weight: 700; }
+  footer .footer-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0; }
+    footer .footer-izq .footer-logo {
+      width: 50%; }
+    footer .footer-izq .footer-ig {
+      width: 10%;
+      padding-top: 40px;
+      padding-left: 20px; }
+  footer .footer-der ul li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-style: normal; }
+    footer .footer-der ul li a {
+      color: white;
+      text-decoration: none; }
+      footer .footer-der ul li a:hover {
+        color: #00DD25; }

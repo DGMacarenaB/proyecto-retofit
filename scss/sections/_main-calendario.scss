@@ -1,0 +1,32 @@
+/* --------- main - Calendario -------- */
+
+.main-calendario{
+    .presentacion-3{
+        display: flex;
+        .presentacion-3-texto{
+            display: flex;
+           flex-direction: column;
+           justify-content: center;
+        }
+    }
+    .horarios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        background-color: #2b2a42;
+        .calendario{
+            padding: 30px;
+            background-color: #2b2a42;
+            .calendario-logo{
+                width: 80%;
+                background-color: #2b2a42;
+            }
+        }
+        .calendario-imagen{
+            width: 70vw;
+            align-items: center;
+        }
+    }
+
+}
