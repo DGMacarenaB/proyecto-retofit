@@ -1,12 +1,12 @@
 /* --------- footer--------- */
 
 footer{
-    background-color: #2b2a42;
+    background-color: $violeta;
     color: white;
     padding: 10px;
     display: flex;
     h3{
-        color: #00DD25;
+        color: $verde;
         font-weight: 700;
        
     }
@@ -37,7 +37,7 @@ footer{
                     color: white;
                     text-decoration: none;
                     &:hover{
-                        color: #00DD25;
+                        color: $verde;
                     }
                 }
             }

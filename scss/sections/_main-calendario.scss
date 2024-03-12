@@ -14,13 +14,13 @@
         flex-direction: column;
         align-items: center;
         padding: 40px 0;
-        background-color: #2b2a42;
+        background-color: $violeta;
         .calendario{
             padding: 30px;
-            background-color: #2b2a42;
+            background-color: $violeta;
             .calendario-logo{
                 width: 80%;
-                background-color: #2b2a42;
+                background-color: $violeta;
             }
         }
         .calendario-imagen{

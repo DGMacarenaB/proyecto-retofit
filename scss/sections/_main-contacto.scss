@@ -2,7 +2,7 @@
 
 .main-contacto{
         .titulo-contacto{
-            background-color: #00DD25;
+            background-color: $verde;
             color: white;
             text-align: center;
             padding: 50px 0;
@@ -24,12 +24,12 @@
                 }
                 .formulario-contacto{
                     h6{
-                        color: #00DD25;
+                        color: $verde;
                     }
                 }
         }
         .minibanner-contacto{
-            background-color: #00DD25;
+            background-color: $verde;
             color: white;
             h3{
                 text-align: center;

@@ -16,7 +16,7 @@
 }
 
 .seccion-home-destacados{
-    background-color: #2b2a42;
+    background-color: $violeta;
     color: aliceblue;
     display: flex;
     font-size: 150%;
@@ -38,14 +38,14 @@
         text-align: center;
     }
     .planes{
-        background-color: #2b2a42;
+        background-color: $violeta;
         color: white;
         display: flex;
         justify-content: space-around;
         padding: 40px 0;
         .planes-seccion{
             .planes-subidadetexto{
-                color: chartreuse;
+                color: $verde;
             }
         }
     }

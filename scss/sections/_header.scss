@@ -2,34 +2,44 @@
 
 header{
     .navegacion{
-        background-color: #2b2a42;
+        background-color: $violeta;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 2 20px;
-        ul{
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            li{
-                color: white;
-                a{
-                    margin: 10px;
-                    color: white; 
-                    text-decoration: none;
-                    font-style: normal;
-                    &:hover{
-                        color: #00DD25;
+        .logo-menu{
+            a{
+                img{
+                    width: 50%;
+                }
+                padding-left: 20px;
+            }
+
+        }
+        .links-menu{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    color: white;
+                    a{
+                        margin: 10px;
+                        color: white; 
+                        text-decoration: none;
+                        font-style: normal;
+                        &:hover{
+                            color: $verde;
+                        }
+                    
                     }
-                    img{
-                        height: 30px;
-                    }
+                    
                 }
                 
             }
-            
         }
+        
         
     }
     

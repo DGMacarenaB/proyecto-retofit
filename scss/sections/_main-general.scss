@@ -1,7 +1,7 @@
 /* --------- body - general -------- */
 
 h1{
-    color: #2b2a42;
+    color: $violeta;
     font-family: "Prompt", sans-serif;
   font-weight: 700;
   font-size: 300%;
@@ -61,7 +61,7 @@ a{
 
 .boton{
     color: rgb(0, 0, 0);
-    background-color: #00DD25;
+    background-color: $verde;
     font-family: "Prompt", sans-serif;
     font-weight: 500;
     font-style: normal;

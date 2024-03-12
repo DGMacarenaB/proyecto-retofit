@@ -10,7 +10,7 @@
         }
     }
     .actividades-secciones{
-        background-color: #2b2a42;
+        background-color: $violeta;
         display: grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
         padding: 20px 20px;
@@ -18,7 +18,7 @@
             display: inline-block;
         }
         h5{
-            color: #00DD25;
+            color: $verde;
         }
         p{
             color: white;
