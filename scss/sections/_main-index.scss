@@ -16,7 +16,7 @@
 }
 
 .seccion-home-destacados{
-    background-color: $violeta;
+    background-image: linear-gradient(rgb(26, 18, 33), $violeta);
     color: aliceblue;
     display: flex;
     font-size: 150%;
@@ -38,7 +38,7 @@
         text-align: center;
     }
     .planes{
-        background-color: $violeta;
+        background-image: linear-gradient(rgb(26, 18, 33), $violeta);
         color: white;
         display: flex;
         justify-content: space-around;
