@@ -3,26 +3,63 @@
 .main-actividades{
     .presentacion-2{
         display: flex;
+        flex-direction: row; 
+    }
         .presentacion-2-texto{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            flex: 1;
+            padding: 40px 40px;
         }
-    }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    
     .actividades-secciones{
         background-color: $violeta;
-        display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33%;
-        padding: 20px 20px;
-        .secciones-individuales{
-            display: inline-block;
-        }
-        h5{
-            color: $verde;
-        }
-        p{
-            color: white;
-        }
+        margin: 0;
+        padding: 0;
+        .grid-container {
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* Crea columnas automáticas, con un mínimo de 200px y se expanden automáticamente */
+            gap: 10px; /* Espacio entre elementos */
+          }
+          
+          .item {
+            padding: 20px;
+            text-align: center;
+            h5{
+                color: $verde;
+        
+            }
+            p{
+                color: white;
+            }
+ 
+       
     }
 
+   
+      }
+      
+      
+      @media screen and (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr)); /* Redefine columnas para dispositivos más pequeños */
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .grid-container {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Redefine columnas para dispositivos muy pequeños */
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .presentacion-2 {
+          flex-direction: column;
+        }
+      }
 }

@@ -1,24 +1,32 @@
 /* --------- main - index -------- */
 
 .banner1-home {
-    width: 100vw;
     display: flex;
+    flex-direction: row;
     .banner1-home-texto{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
+        flex: 1;
+        padding: 40px 40px;
     }
     .banner1-home-imagen{
-        width: 30%;
+        max-width: 100%;
         height: auto;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .banner1-home{
+      flex-direction: column;
+    }
+  }
 
 .seccion-home-destacados{
     background-image: linear-gradient(rgb(26, 18, 33), $violeta);
     color: aliceblue;
     display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
     align-content: center;
     justify-content: space-around;
@@ -41,6 +49,7 @@
         background-image: linear-gradient(rgb(26, 18, 33), $violeta);
         color: white;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding: 40px 0;
         .planes-seccion{
@@ -53,20 +62,32 @@
 
 .prueba-gratis{
     display: flex;
+    flex-direction: row; 
+
     .prueba-gratis-img{
-        width: 50%;
+        img{
+        max-width: 100%;
+        height: auto;
+    }
     }
     .prueba-gratis-texto{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
+        flex: 1;
+        padding: 0 60px;
     }
+   
 }
+@media screen and (max-width: 900px) {
+    .prueba-gratis{
+      flex-direction: column;
+    }
+  }
 
 .servicios{
     display: flex;
-    padding: 40px 0;
+    padding: 40px 40px;
     justify-content: space-evenly;
     align-items: center;
     .servicios-home{
@@ -82,5 +103,7 @@
             text-align: center;
         }
     }
+
+    
 }
 

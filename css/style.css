@@ -8,7 +8,10 @@
 
 /* -------NAVEGACIÓN-------- */
 header .nav-link:hover {
-  color: #00DD25 !important; }
+  color: #00dd25 !important; }
+
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%0, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
 
 /* --------- body - general -------- */
 h1 {
@@ -62,7 +65,7 @@ a {
 
 .boton {
   color: black;
-  background-color: #00DD25;
+  background-color: #00dd25;
   font-family: "Prompt", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -92,21 +95,27 @@ form {
 
 /* --------- main - index -------- */
 .banner1-home {
-  width: 100vw;
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
   .banner1-home .banner1-home-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%; }
+    flex: 1;
+    padding: 40px 40px; }
   .banner1-home .banner1-home-imagen {
-    width: 30%;
+    max-width: 100%;
     height: auto; }
+
+@media screen and (max-width: 900px) {
+  .banner1-home {
+    flex-direction: column; } }
 
 .seccion-home-destacados {
   background-image: linear-gradient(#1a1221, #2b2a42);
   color: aliceblue;
   display: flex;
+  flex-wrap: wrap;
   font-size: 150%;
   align-content: center;
   justify-content: space-around;
@@ -124,24 +133,32 @@ form {
   background-image: linear-gradient(#1a1221, #2b2a42);
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 40px 0; }
   .planes-sección .planes .planes-seccion .planes-subidadetexto {
-    color: #00DD25; }
+    color: #00dd25; }
 
 .prueba-gratis {
-  display: flex; }
-  .prueba-gratis .prueba-gratis-img {
-    width: 50%; }
+  display: flex;
+  flex-direction: row; }
+  .prueba-gratis .prueba-gratis-img img {
+    max-width: 100%;
+    height: auto; }
   .prueba-gratis .prueba-gratis-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%; }
+    flex: 1;
+    padding: 0 60px; }
+
+@media screen and (max-width: 900px) {
+  .prueba-gratis {
+    flex-direction: column; } }
 
 .servicios {
   display: flex;
-  padding: 40px 0;
+  padding: 40px 40px;
   justify-content: space-evenly;
   align-items: center; }
   .servicios .servicios-home .servicios-cuerpo {
@@ -155,22 +172,34 @@ form {
 
 /* --------- main - nosotros -------- */
 .main-nosotros .presentacion {
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
   .main-nosotros .presentacion .presentacion-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    flex: 1;
+    padding: 40px 40px; }
+  .main-nosotros .presentacion img {
+    max-width: 100%;
+    height: auto; }
 
 .main-nosotros .items {
   background-color: #2b2a42;
+  list-style-type: none;
   text-align: center;
   padding: 40px 0;
   color: white; }
   .main-nosotros .items ul li {
-    list-style: circle; }
+    list-style: none; }
+
+@media screen and (max-width: 900px) {
+  .main-nosotros .presentacion {
+    flex-direction: column; } }
 
 .main-nosotros .formas-de-trabajo {
   display: flex;
+  flex-direction: row;
   padding: 40px 0;
   justify-content: space-evenly;
   align-items: center; }
@@ -178,25 +207,57 @@ form {
     align-items: center;
     text-align: center; }
 
+@media screen and (max-width: 840px) {
+  .main-nosotros .formas-de-trabajo {
+    flex-direction: column; } }
+
 /* --------- main - Actividades -------- */
 .main-actividades .presentacion-2 {
-  display: flex; }
-  .main-actividades .presentacion-2 .presentacion-2-texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+  display: flex;
+  flex-direction: row; }
+
+.main-actividades .presentacion-2-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 40px 40px; }
+
+.main-actividades img {
+  max-width: 100%;
+  height: auto; }
 
 .main-actividades .actividades-secciones {
   background-color: #2b2a42;
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  padding: 20px 20px; }
-  .main-actividades .actividades-secciones .secciones-individuales {
-    display: inline-block; }
-  .main-actividades .actividades-secciones h5 {
-    color: #00DD25; }
-  .main-actividades .actividades-secciones p {
-    color: white; }
+  margin: 0;
+  padding: 0; }
+  .main-actividades .actividades-secciones .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    /* Crea columnas automáticas, con un mínimo de 200px y se expanden automáticamente */
+    gap: 10px;
+    /* Espacio entre elementos */ }
+  .main-actividades .actividades-secciones .item {
+    padding: 20px;
+    text-align: center; }
+    .main-actividades .actividades-secciones .item h5 {
+      color: #00dd25; }
+    .main-actividades .actividades-secciones .item p {
+      color: white; }
+
+@media screen and (max-width: 768px) {
+  .main-actividades .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    /* Redefine columnas para dispositivos más pequeños */ } }
+
+@media screen and (max-width: 480px) {
+  .main-actividades .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* Redefine columnas para dispositivos muy pequeños */ } }
+
+@media screen and (max-width: 900px) {
+  .main-actividades .presentacion-2 {
+    flex-direction: column; } }
 
 /* --------- main - Calendario -------- */
 .main-calendario .presentacion-3 {
@@ -204,7 +265,8 @@ form {
   .main-calendario .presentacion-3 .presentacion-3-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    padding: 40px 40px; }
 
 .main-calendario .horarios {
   display: flex;
@@ -224,7 +286,7 @@ form {
 
 /* --------- main - Contacto -------- */
 .main-contacto .titulo-contacto {
-  background-color: #00DD25;
+  background-color: #00dd25;
   color: white;
   text-align: center;
   padding: 50px 0; }
@@ -243,10 +305,10 @@ form {
   .main-contacto .contacto-pagina .formulario-contacto {
     width: 800px; }
     .main-contacto .contacto-pagina .formulario-contacto h6 {
-      color: #00DD25; }
+      color: #00dd25; }
 
 .main-contacto .minibanner-contacto {
-  background-color: #00DD25;
+  background-color: #00dd25;
   color: white; }
   .main-contacto .minibanner-contacto h3 {
     text-align: center;
@@ -266,9 +328,10 @@ footer {
   background-image: linear-gradient(#1a1221, #2b2a42);
   color: white;
   padding: 10px;
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
   footer h3 {
-    color: #00DD25;
+    color: #00dd25;
     font-weight: 700; }
   footer .footer-izq {
     display: flex;
@@ -277,11 +340,16 @@ footer {
     align-items: flex-start;
     padding: 20px 0; }
     footer .footer-izq .footer-logo {
-      width: 50%; }
+      width: 50%;
+      padding-left: 60px; }
     footer .footer-izq .footer-ig {
-      width: 10%;
+      width: 20%;
       padding-top: 40px;
-      padding-left: 20px; }
+      padding-left: 60px; }
+  footer .footer-der .link {
+    padding-left: 40px; }
+  footer .footer-der .informacion {
+    padding-left: 40px; }
   footer .footer-der ul li {
     list-style: none;
     color: white;
@@ -291,4 +359,8 @@ footer {
       color: white;
       text-decoration: none; }
       footer .footer-der ul li a:hover {
-        color: #00DD25; }
+        color: #00dd25; }
+
+@media screen and (max-width: 900px) {
+  footer {
+    flex-direction: column; } }

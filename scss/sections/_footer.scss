@@ -5,6 +5,7 @@ footer{
     color: white;
     padding: 10px;
     display: flex;
+    flex-direction: row;
     h3{
         color: $verde;
         font-weight: 700;
@@ -19,15 +20,23 @@ footer{
         padding: 20px 0;
         .footer-logo{
             width: 50%;
+            padding-left: 60px;
         }
         .footer-ig{
-            width: 10%;
+            width: 20%;
             padding-top: 40px;
-            padding-left: 20px;
+            padding-left: 60px;
         }
     }
     .footer-der{
+        .link{
+            padding-left: 40px;
+        }
+        .informacion{
+            padding-left: 40px; 
+        }
         ul{
+            
             li{
                 list-style: none;
                 color: white;
@@ -42,8 +51,15 @@ footer{
                 }
             }
         }
+
     }
 
 
 }
+
+@media screen and (max-width: 900px) {
+    footer{
+      flex-direction: column;
+    }
+  }
 
