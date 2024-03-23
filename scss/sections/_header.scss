@@ -1,60 +1,9 @@
 /* -------NAVEGACIÓN-------- */
 
 header{
-    .navegacion{
-        background-color: $violeta;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2 20px;
-        .logo-menu{
-            a{
-                img{
-                    width: 50%;
-                }
-                padding-left: 20px;
-            }
-
+    .nav-link{
+        &:hover{
+            color: $verde !important;
         }
-        .links-menu{
-            ul{
-                list-style: none;
-                display: flex;
-                flex-wrap: wrap;
-                li{
-                    color: white;
-                    a{
-                        margin: 10px;
-                        color: white; 
-                        text-decoration: none;
-                        font-style: normal;
-                        &:hover{
-                            color: $verde;
-                        }
-                    
-                    }
-                    
-                }
-                
-            }
-        }
-        
-        
-    }
-    
-}
-
-
- /*Medidas querys - mobile last*/
-@media (max-width:870px){
-    .navegacion{
-        flex-direction: column;
-}
-}
-
-@media (max-width:655px){
-    .navegacion ul{
-        justify-content: center;
     }
 }

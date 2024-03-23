@@ -7,39 +7,8 @@
   box-sizing: border-box; }
 
 /* -------NAVEGACIÓN-------- */
-header .navegacion {
-  background-color: #2b2a42;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2 20px; }
-  header .navegacion .logo-menu a {
-    padding-left: 20px; }
-    header .navegacion .logo-menu a img {
-      width: 50%; }
-  header .navegacion .links-menu ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; }
-    header .navegacion .links-menu ul li {
-      color: white; }
-      header .navegacion .links-menu ul li a {
-        margin: 10px;
-        color: white;
-        text-decoration: none;
-        font-style: normal; }
-        header .navegacion .links-menu ul li a:hover {
-          color: #00DD25; }
-
-/*Medidas querys - mobile last*/
-@media (max-width: 870px) {
-  .navegacion {
-    flex-direction: column; } }
-
-@media (max-width: 655px) {
-  .navegacion ul {
-    justify-content: center; } }
+header .nav-link:hover {
+  color: #00DD25 !important; }
 
 /* --------- body - general -------- */
 h1 {
