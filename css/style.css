@@ -75,9 +75,12 @@ a {
   border-radius: 4px;
   display: inline-block;
   cursor: pointer;
-  width: 200px; }
+  width: 200px;
+  height: 50px; }
   .boton:hover {
-    color: white; }
+    color: white;
+    width: 220px;
+    height: 55px; }
 
 div p {
   margin: 0,202; }

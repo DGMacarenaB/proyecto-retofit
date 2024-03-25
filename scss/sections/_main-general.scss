@@ -72,8 +72,11 @@ a{
     display: inline-block;
     cursor: pointer;
     width: 200px;
+    height: 50px;
     &:hover{
       color: white;
+      width: 220px;
+      height: 55px;
     }
 
 }
